@@ -32,9 +32,8 @@ Working on implementing several variations of HAI's animatior track system to al
 
 
 known issues +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-When i was implementing this several variantios lead to a massively scaling issue and i landed on the idea of the pinwheel animator to allow future points on the avatar to be added without having to completely rebuild every animation and restructuring. 
 
-Certain desyncs start happening after several hours in game without reloading there seems to be some floats that seem to wander, reloading vrchat seems to fix it aswell as throwing the doll into the open world seems to help the sync a bit. I suspect a combination of sync variables that should not be as well a VRC implenenation of the constraint system is still a bit wonky as i have seen update after update referencing issues surrounding this. 
+
 
 Serialization it has trouble with multiple folders across the package need those cleaned up and directory restructured. 
 
