@@ -1,3 +1,6 @@
+This will be the main fork to take this into blendshape motion paths to allow deeper logic and prevent many of the issues i currently have with the current dev path. 
+
+
 This is a gesture based system for a pet in VRChat that i developed when i became burnt out in vrchat and to entertain my friends, 
 
 Current Features ++++++++++++++++++++++++++++++++++++++++++++++++++++++
