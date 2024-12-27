@@ -1,44 +1,68 @@
-This is a gesture based system for a pet in VRChat that i developed when i became burnt out in vrchat and to entertain my friends, 
+Gesture-Based Pet System for VRChat
+Bring your avatar to life with an interactive, gesture-controlled pet!
 
-Current Features ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-- Gesture based activation (Dual rock and roll for on and dual pointer to disable) and arm holographic menu for future tweaks and pet status
-- 
-- Anchors for the pet to attach on many places on body, head, either hands, both hips, lower right foot and tail ont, using only fbt natural pick and place.
-- 
-- Seamless right and left drop in world when hand is not moving and hand moves into open position. Will not release if hand remains in motion and will attach once near a standard anchor point.
-- 
-- seamless ability to throw doll into world with phyisics if hand remains above a certain velocity when the open hand gesture remains. Currently simply recall my closing right hand. This will shortly be updated to be the primary way to drop the pet into the world
+This project is a labor of love, born from a desire to inject some fun and interactivity into VRChat. Frustrated with burnout, I set out to create a dynamic pet system that players could use to enhance their avatar's personality and provide engaging gameplay. This project is my first deep dive into Unity's animator system and it has been a journey!
 
-- Network syncing as a primary building block, all logic to be performed on the local avatar and all animations for both local and remote to be on completely seperate layer for complete network sync and little to no late joiner issues
+✨ Key Features
+Gesture-Based Activation:
 
+Dual "rock and roll" hand gestures to activate the pet.
 
-Current goal ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Shoulder locations, and upper arms, both feet. 
+Dual "pointer" hand gestures to deactivate the pet.
 
-Description furter internal rambling ++++++++++++++++++++++++++++++++++++++
+Holographic Arm Menu:
 
-It is a mashup of my efforts to linkup several of the VRlabs implementations and is my first forary into truly trying to understand unitys animator system and is currently designed to be drag and drop onto the V3.1 Nardodragon.
-VRCfury drag and drop, needs delete on upload markers to allow drag and drop placement of the typical binders for pet locations. 
+Future home for in-game tweaks and pet status display.
 
+Natural Anchor System:
 
+Attach your pet to multiple locations on your avatar: Head, hands, hips, lower right foot, and tail.
 
-but can be easily modified to fit any avatar. It is designed to allow expansion at all levels and is the work of many failed attemps. Any ideas of help greatly appreciated, i intend for this to be a base system for a pet to increase interactivity between users and the pets themselves. 
-Mainly to be a game within an avatar and perhaps something like a tamagotchi. Currently the 2nd animator on the pet itself is limited due to a know issues with secondary animation layers running underneath the typical vr ones. 
+Uses Full-Body Tracking (FBT) natural pick and place for seamless attachment.
 
+Dynamic Drop System:
 
+Seamless right/left drop into the world when your hand is not moving and in an open position.
 
-Todo's ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Working on implementing several variations of HAI's animatior track system to allow the pet to crawl up all the major avatar bases. 
+Pet remains attached when hand is in motion.
 
+Will attach to an anchor point once near it.
 
-known issues +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Physics-Based Throwing:
 
+Throw the pet with physics when the hand velocity is above a threshold.
 
+Currently a right-hand recall gesture, this is planned to be the primary drop method.
 
-Serialization it has trouble with multiple folders across the package need those cleaned up and directory restructured. 
+Robust Network Syncing:
 
-Make it so that it rewrites over itself without issues. 
+All logic is performed on the local avatar.
 
-The primary model trixie, is actually a complete rebuild from scratch Will replace with something else completely original very shortly. 
+All animations are performed on separate layers for both local and remote players.
 
-Switch the avatar into something like a blade or cool item when system deactivates so that it appears to be a simple avatar object.
+Designed to minimize late joiner issues and maintain seamless performance.
+
+🎯 Current Goals
+Add more anchor points: Shoulders, upper arms, and both feet.
+
+⚙️ Development Notes
+This project is a fusion of several VRlabs implementations, pushing my understanding of Unity's animator system. It is primarily designed to be a drag-and-drop addition to the V3.1 Nardodragon using VRCfury for easy integration and anchor point setup, however it is designed to be easily modified for any avatar. This project is a compilation of many failed attempts and is designed to be a core system for future pet development. The second animator on the pet is currently limited due to known issues with animation layers. Any and all feedback is welcome!
+
+The ultimate goal for this system is to become a base for increasing the interactivity between users and their pets. I also want to eventually add Tamagotchi style gameplay.
+
+🚧 To-Do
+Implement various versions of HAI's animator track system for better crawling.
+
+🐛 Known Issues
+Serialization: The current package has trouble with multiple folders, needs restructuring.
+
+Self-Rewriting: Needs to be made to re-write over itself without errors.
+
+Model Replacement: The primary model, Trixie, is currently a rebuild from scratch and will be replaced with a new original model.
+
+Deactivation State: Currently in deactivation the pet goes invisible, would like to switch the avatar into a simple object when deactivated.
+
+🤝 Contributions Welcome!
+I'm excited to continue building on this project and would love to hear your ideas, suggestions, or any help you can offer! Let's make this a truly fun and engaging experience for VRChat!
+
+Note: Remember to include installation instructions in your README file, or link to an install guide. Also, if you have any visuals for the project, add them! A demo video would make the project even more appealing!
